@@ -1,0 +1,52 @@
+:root {
+    background-color: #39CCCC;
+    --dark-color: #000000;
+    --light-color: pink;
+}
+body {
+    color: darkblue;
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+main {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#head h3 a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: larger;
+}
+
+/* our post class */
+.post {
+    border:1px solid var(--dark-color);
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    img {
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+}
+
+.post a {
+    text-decoration: none;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+footer {
+text-align: center;
+justify-content: center;
+font-size: small;
+}
+b
