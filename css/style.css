@@ -15,6 +15,10 @@ main {
     margin: 0 auto;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 #head {
     display: flex;
     justify-content: space-between;
@@ -27,15 +31,19 @@ main {
 }
 
 /* our post class */
-.post {
+.post, #post {
     border:1px solid var(--dark-color);
     margin-bottom: 1em;
     padding: .5em 1em;
     img {
-        width: 80%;
-        height: auto;
+        width: 50%;
+        height: small;
         display: block;
     }
+}
+
+#post {
+    border-radius: 5px;
 }
 
 .post a {
@@ -49,4 +57,42 @@ text-align: center;
 justify-content: center;
 font-size: small;
 }
-b
+
+.block-div, .block {
+    display: block;
+    border-radius: 1em;
+    color: coral;
+    background-color: blue;
+    border: 1px solid var(--dark-color);
+    padding: 1em;
+}
+
+inline-block {
+    transform: rotate(30%);
+    padding: 1em;
+}
+
+.fixed {
+    z-index: 999;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+
+    width: 200px;
+    padding: 1em;
+    background-color: coral;
+    border: 1px solid var(--dark-color)
+}
+
+
+.sticky-demo-holder {
+    overflow: scroll;
+    position: relative;
+    border: 1px solid var(--dark-color);
+    width: 100%;
+    margin-bottom: 1em;
+    height: 200px;
+    p {
+        margin: 1em;
+    }
+}
